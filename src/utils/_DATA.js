@@ -249,6 +249,7 @@ function formatTweet ({ author, text, replyingTo = null }) {
 }
 
 export function _saveTweet ({ text, author, replyingTo }) {
+  console.log("replyingTo", text, author, replyingTo)
   return new Promise((res, rej) => {
     const formattedTweet = formatTweet({
       text,
